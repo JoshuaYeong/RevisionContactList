@@ -1,0 +1,27 @@
+.jus-right {
+  display: flex;
+  justify-content: right;
+  margin: 5px;
+}
+
+.jus-left {
+  display: flex;
+  justify-content: left;
+  margin: 20px;
+}
+
+.box-it2 {
+  padding: 10px;
+  margin: 20px;
+  border: 1px gray solid;
+  border-radius: 10px;
+  width: 1000px;
+  justify-content: space-between;
+}
+
+table.fixed {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}

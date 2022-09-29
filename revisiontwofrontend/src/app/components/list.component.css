@@ -1,0 +1,18 @@
+.box-it2 {
+  padding: 10px;
+  margin: 10px;
+  border: 1px gray solid;
+  border-radius: 10px;
+  width: 500px;
+}
+
+.box-it3 {
+  margin: 20px;
+  padding: 20px;
+  border: 1px gray solid;
+  width: 400px;
+  display: flexbox;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+}

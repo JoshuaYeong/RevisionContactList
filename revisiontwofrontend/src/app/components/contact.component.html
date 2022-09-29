@@ -1,0 +1,37 @@
+<div class="box-it2">
+  <div class="jus-right">
+    <button type="button" class="btn btn-warning" (click)="addNew()">Add New</button>
+  </div>
+  <form [formGroup]="contactForm" (ngSubmit)="processForm()">
+    <div class="center-it">
+      <table class="fixed">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let c of contactArray.controls" [formGroup]="c">
+            <td>
+              <input type="text" size="30" placeholder="Your Name" formControlName="name">
+            </td>
+            <td>
+              <input type="text" size="30" placeholder="Your Email" formControlName="email">
+            </td>
+            <td>
+              <input type="text" size="30" placeholder="Your 8-digit Mobile" formControlName="mobile">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="jus-right">
+      <button type="submit" class="btn btn-success" [disabled]="contactForm.invalid">Submit</button>
+    </div>
+  </form>
+</div>
+<div class="jus-left">
+  <button type="button" class="btn btn-danger" [routerLink]="['/']">Back</button>
+</div>
