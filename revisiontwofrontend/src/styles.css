@@ -35,3 +35,10 @@
   height: auto;
   display: block;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
